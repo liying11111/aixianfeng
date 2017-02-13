@@ -1,0 +1,140 @@
+header{
+	height: 44px;
+	background: black;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	top:0;
+	left: 0;
+	padding-top: 20px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.back{
+	width: 80px;
+}
+.omit{
+	width: 80px;
+}
+.title{
+	flex: 1;
+}
+
+.reserve_out{
+	width: 100%;
+}
+
+.reserve_main{
+	width: 100%;
+	margin-top:64px;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 20px;
+	background: white;
+}
+
+.reserve_list1{
+	margin-top:12px;
+	overflow: hidden;
+	background: white;
+	font-size: 16px;
+	border-top: 1px solid black;
+}
+
+.reserve_list2{
+	overflow: hidden;
+	background: white;
+	font-size: 16px;
+	border-top: 1px solid#ccc;
+}
+
+
+.reserve_list1 li,.reserve_list2 li{
+	float:left;
+	width: 17.8%;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding: 12px 0;
+}
+
+.reserve_list1 li a,.reserve_list2 li a{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+/*.reserve_list1 li a:hover,.reserve_list2 li a:hover{
+	color: blue;
+}*/
+
+.reserve_fruit{
+	background: white;
+	width: white;
+	margin-top: 15px;
+	width: 100%;
+	font-size: 20px;
+	padding: 10px 0;
+	border-top: 1px solid black;
+}
+
+.reserve_fruit span{
+	background: #2bb1fa;
+    color: #2BB1FA;
+    margin: 0 10px;
+}
+
+.reserve_gain{
+	width: 100%;
+	background: white;
+	overflow: hidden;
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
+}
+
+.reserve_gain a{
+	width: 32%;
+	float: left;
+}
+
+.reserve_gain a img{
+	width: 100%;
+}
+
+.reserve_gainR{
+	width: 65%;
+	float: right;
+	position: relative;
+}
+
+.reserve_gainR p:nth-child(1){
+	font-size: 20px;
+	margin: 8px 0 13px 0;
+}
+
+.reserve_gainR p:nth-child(2){
+color: #ccc;
+}
+
+.reserve_gainR p:nth-child(3){
+color: red;
+margin-top: 20px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.reserve_gainR p:nth-child(3) span{
+color: #ccc;
+font-size: 16px;
+text-decoration: line-through;
+margin-left: 20px;
+}
+
+.reserve_car{
+	position: absolute;
+	right: 25px;
+	bottom: 7px;
+	width: 20%;
+}

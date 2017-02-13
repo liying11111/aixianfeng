@@ -1,0 +1,90 @@
+	*{
+			margin:0;padding:0;
+			list-style:none;
+			text-decoration: none;
+			font-family:"微软雅黑";
+		}
+		
+		.footer{
+			width: 100%;
+			position: fixed;
+			left: 0;
+			bottom:0;
+			display: -webkit-flex;
+			height: 49px;
+			z-index: 20;
+			background-color: rgba(230,230,230,0.6);
+		}
+		
+		#shop_logo{
+			width: 25px;
+			height: 25px;
+			background: red;
+			border-radius: 50%;
+			position:absolute;
+			right: 18%;
+			top: 0;
+			line-height: 25px;
+			color: white;
+			text-align: center;
+		}
+		
+		.footer li{
+			flex: 1;
+			text-align:center;
+		}
+		
+		.footer div{
+			width: 45%;
+			height: 30px;
+			margin: auto;
+			background: url("../img1/sprite_tab_icons.png") no-repeat;
+			background-size: 450% 200%;
+		}
+		
+		.footer .footer_img1{
+			background-position: 0 0%;
+		}
+		
+		.footer .footer_img1-1{
+			background-position: 0 100%;
+		}
+		
+		.footer .footer_img2{
+			background-position: 25% 0%;
+		}
+		
+		
+		.footer .footer_img2-1{
+			background-position:25% 100%;
+		}
+		
+		
+		.footer .footer_img3{
+			background-position: 50% 0;
+		}
+		
+		.footer .footer_img3-1{
+			background-position: 50% 100%;
+		}
+		
+		.footer .footer_img4{
+			background-position: 75% 0;
+		}
+		
+		.footer .footer_img4-1{
+			background-position: 75% 100%;
+		}
+		
+		.footer .footer_img5{
+			background-position: 100% 0;
+		}
+		
+		.footer .footer_img5-1{
+			background-position: 100% 100%;
+		}
+		
+		.footer a{
+			font-size:12px;
+			color:#ccc;
+		}

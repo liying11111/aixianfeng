@@ -1,0 +1,78 @@
+nav{
+	height: 44px;
+	background: white;
+	width: 100%;
+	display: flex;
+	/*position: fixed;
+	top:0;
+	left: 0;*/
+	padding-top: 20px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+	margin-top: 64px;
+}
+
+nav img{
+	width: 40%;
+}
+
+body{
+	background: #CCCCCC;
+}
+
+.back2{
+	width: 80px;
+}
+.omit2{
+	width: 80px;
+}
+.title2{
+	flex: 1;
+	color: black;
+}
+
+.crazy_seckill{
+	width: 100%;
+	overflow: hidden;
+	position:relative;
+}
+
+.crazy_seckill img{
+	width: 100%;
+}
+
+.crazy_seckill p{
+	position:absolute;
+	right: 25px;
+	bottom:20px;
+	padding: 5px 0;
+	width: 17%;
+	background:#272c2a;
+	text-align: center;
+	border-radius: 12px;
+	color: white;	
+}
+
+.crazy_seckill2{
+	width: 100%;
+	overflow: hidden;
+	text-align:center;
+}
+
+.crazy_seckill2 li p{
+	font-size: 18px;
+}
+
+.crazy_seckill2 li{
+	width: 23%;
+	text-align: center;
+	padding:40px 0;
+	border:1px solid red;
+	overflow: hidden;
+	float: left;
+	background:url("../img1/seckill-2.png") 100% 0 no-repeat;
+	background-position:35px 90px;
+	margin-left: 3px;
+	margin-right: 3px;
+}

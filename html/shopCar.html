@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<P class="back" ng-click="homeBtn()">&lt;返回</P>
+			<p class="title">爱鲜蜂</p>
+			<p class="omit">•••</p>
+		</header>
+		<div class="shopCar_out">
+			<div class="shopCar_main">
+				<p>购物车</p>
+		   </div>
+		   	<div class="shopCar_location">
+				<p><a href="###"/>先锋侠需要您的精确位置</a></p>
+		   </div>
+		   <ul class="shopCar_flash">
+		   	 <li><span>i</span>闪送超市</li>
+		   	 <li>￥0起送，22：00前满￥30减免运费，22：00后满￥60减免运费</li>
+		   </ul>
+		   <div class="shopCar_time">
+		   	<p>收货时间</p>
+		   	<p>一小时送达</p>
+		   	<p>可预订></p>
+		   </div>
+		   <div class="shopCar_comment">
+		   	<span>收货备注</span><input type="text" placeholder="可输入100字以内特殊要求内容" />
+		   </div>
+		 <!--购物车-->  
+		   <div class="reserve_gain" ng-repeat="obb in arr">
+			<a><img src="{{obb.img}}"/></a>
+			<div class="reserve_gainR">
+				<p>{{obb.name}}</p>
+				<p>{{obb.specifics}}</p>
+				<p>￥{{obb.market_price}}<span>￥{{obb.price}}</span></p>
+				<div class="jiajian"><label class="la1" ng-click="jia(obb)">-</label><span>{{obb.num}}</span><label class="la2" ng-click="jian(obb)">+</label></div>
+			</div>
+		</div>
+		<div class="shopCar_dirme">
+		   		<a><img ng-src="img2/right.png" alt=""/><span>全选</span></a>
+		   		<p class="sum">共：<span>{{prc}}</span></p>
+		   		<p class="choice">选好了</p>
+		   </div>
+		</div>
+	</body>
+</html>

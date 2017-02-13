@@ -1,0 +1,184 @@
+header{
+	height: 44px;
+	background: black;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	top:0;
+	left: 0;
+	padding-top: 20px;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.back{
+	width: 80px;
+}
+.omit{
+	width: 80px;
+}
+.title{
+	flex: 1;
+}
+
+.my_main{
+	width: 100%;
+	margin-top: 64px;
+	background: #ffd600;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+.my_main a{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.my_main a img{
+	width: 90%;
+}
+
+.my_main a:nth-child(1){
+	width: 25%;
+	margin-left: 5px;
+}
+
+.my_main a:nth-child(2){
+	width: 45%;
+	margin-left: 15px;
+	position: relative;
+}
+
+.my_main a:nth-child(2) p{
+	font-size: 20px;
+	color: white;
+}
+
+.my_main a:nth-child(2) h2{
+	color: red;
+	font-size:18px;
+	position: absolute;
+	right: 30px;
+	bottom:20px;
+}
+
+.my_main a:nth-child(3){
+	width: 10%;
+	margin-left:30px;
+}
+
+.my_meban{
+	width: 100%;
+	background:rgba(213,213,213,0.6);
+	overflow: hidden;
+	padding:10px 0;
+	margin-top: 20px;
+}
+
+.my_meban p:nth-child(1){
+	border-right: 1px solid #CCCCCC;
+}
+
+.my_meban p{
+	width: 50%;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+	color: white;
+	font-size: 18px;
+}
+
+.my_meban p img{
+	vertical-align: middle;
+}
+
+.my_meban p span{
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.my_order{
+	width: 100%;
+	overflow: hidden;
+	display: -webkit-flex;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 0 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.my_order a:nth-child(1){
+	font-size: 20px;
+	flex: 1;
+	color:black;
+	margin-left: 10px;
+}
+
+.my_order a:nth-child(2){
+	font-size: 20px;
+	color: #ccc;
+	flex: 1;
+	margin-left: 30px;	
+}
+
+.my_moneylist{
+	width: 100%;
+	overflow: hidden;
+	background: white;
+	padding: 30px 0 15px 0;
+	font-size: 14px;
+}
+
+.my_moneylist a{
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+.my_moneylist a img{
+	width: 40%;
+}
+
+.my_moneylist p{
+	margin-top: 10px;
+	color: black;
+}
+
+.my_moneylist2{
+	width: 100%;
+	overflow: hidden;
+	background: white;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	padding:20px 0 25px 0;
+	font-size: 14px;
+}
+
+.my_moneylist2 a{
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+.my_moneylist2 a img{
+	width: 40%;
+}
+
+.my_moneylist2 a:nth-last-child(1) img{
+	width: 60%;
+}
+
+.my_moneylist2 p{
+	margin-top: 10px;
+	color: black;
+}
+
+
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<P class="back" ng-click="homeBtn()">&lt;返回</P>
+			<p class="title">爱鲜蜂</p>
+			<p class="omit">•••</p>
+		</header>
+		<div class="home_main">
+			<a href="#">
+				<img src="img2/ico_sys.png"/>
+				<p>扫一扫</p>
+			</a>
+			<p class="p1">济远路附近▼</p>
+			<a href="#">
+				<img src="img2/ico_search1.png"/>
+				<p>搜索</p>
+			</a>
+		</div>
+		<!--轮播图-->
+		<div class="carousel">                                      
+			<div class="carousel_juan">
+				<img ng-src="{{obj.activity.img}}" ng-repeat="obj in arr track by $index">
+			</div>
+			<ul class="carousel_list"> 
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="home_center">
+			<a ng-repeat="obj3 in arr3" href="#/crazy"/>
+				<img src="{{obj3.activity.img}}"/>
+				<p>{{obj3.activity.name}}</p>
+			</a>
+		</div>
+		<div class="home_head">
+			<img src="img1/ico_xftt.png" />
+		    <label><span>防霾</span>3M防霾口罩22.8元/3只 1小时闪送</label>
+		</div>
+		<div class="home_headone">
+			 <img src="img1/nav2-1.jpg" alt=""/>
+			 <img src="img1/nav2-2.jpg" alt=""/>
+			 <img src="img1/nav2-3.jpg" alt=""/>
+		</div>
+		<div class="home_headtwo">
+			<img src="img1/business-1.jpg" alt="" />
+			<img src="img1/bussiness-2.jpg" alt="" />
+			<img src="img1/bussiness-3.jpg" alt="" />
+			<img src="img1/bussiness-4.png" alt="" />
+		</div>
+		<div class="home_headthree">
+			<h2 class="home_headthreeLeft"><span>1</span>优选水果</h2>
+		    <p class="home_headthreeRight">更多></p>
+		</div>
+		<div class="home_bao">
+		    <div class="home_picture">
+				<img src="img2/b1.jpg"/>
+		    </div>	
+		    <div class="home_sift">
+		    	<div class="sift_left">
+		    		<img src="img1/fruit-1.jpg"/>
+		    		<p>蜂觅·15度蜜梨</p>
+		    		<p><span class="sp">精选</span><label>买一赠一</label></p>
+		    		<p>400-500g/盒</p>
+		    		<p>￥14.6<span>￥16</span><label>+</label></p>
+		    	</div>
+		    	<div class="sift_center">
+		    		<img src="img1/fruit-2.jpg"/>
+		    		<p>爱鲜蜂·徐香猕...</p>
+		    		<p><span class="sp">精选</span><label>买一赠一</label></p>
+		    		<p>285g 3粒/盒</p>
+		    		<p>￥16.9<span>￥26</span><label>+</label></p>
+		    	</div>
+		    	<div class="sift_right">
+		    		<img src="img1/fruit-3.jpg"/>
+		    		<p>爱鲜蜂·赣南蜜桔</p>
+		    		<p><span class="sp">精选</span></p>
+		    		<p>800-900g/袋</p>
+		    		<p>￥6.8<span>￥8.5</span><label>+</label></p>
+		    	</div>
+		    </div>
+		    <div class="home_headthree">
+				<h2 class="home_headthreeLeft" style="color: #20b1fa;"><span style="color: #20b1fa; background: #20b1fa;">1</span>优选水果</h2>
+			    <p class="home_headthreeRight">更多></p>
+			</div>
+			<div class="home_picture">
+				<img src="img2/b1.jpg"/>
+			</div>	
+	</div>
+	</body>
+</html>

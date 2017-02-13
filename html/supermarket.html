@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<P class="back" ng-click="homeBtn()">&lt;返回</P>
+			<p class="title">爱鲜蜂</p>
+			<p class="omit">•••</p>
+		</header>
+		<div class="main">
+			<p class="p1">济远路附近▼</p>
+			<a href="#">
+				<img src="img2/ico_search1.png"/>
+				<p>搜索</p>
+			</a>
+		</div>
+		<div class="market_out">
+			<div class="market_left">
+				<p><a ng-click="sort1()">热销榜</a></p>
+				<p><a ng-click="sort2()">天天特价</a>
+					<img src="img1/scroll-img.jpg" alt=""/>
+				</p>
+				<p><a ng-click="sort3()">优选水果</a></p>
+				<p><a ng-click="sort4()">牛奶面包</a></p>
+				<p><a>卤味熟食</a></p>
+				<p><a>饮料酒水</a></p>
+				<p><a>休闲零食</a></p>
+				<p><a>冰激凌</a></p>
+				<p><a>方便速食</a></p>
+				<p><a>生活用品</a></p>
+			</div>	
+			<div class="market_right">
+				<div class="market_righttop">
+					<p class="mar_lik1">全部分类v</p>
+					<p class="mar_lik2">综合排序v</p>
+				</div>
+				<div class="mar_hide">
+					<p>全部分类</p>
+				</div>
+				<div class="mar_hide1">
+					<p>综合排序</p>
+					<p>最低优惠</p>
+					<p>明天过后</p>
+				</div>
+				<div class="market_rightbottom">
+					<div class="market_botlist" ng-repeat="obj in arr">
+			    		<img src="{{obj.img}}"/>
+				    		<div class="market_ller">
+					    		<p class="market_pp1">{{obj.name}}</p>
+					    		<p class="market_pp2"><span>精选</span><label>{{obj.pm_desc}}</label></p>
+					    		<p class="market_pp3">{{obj.specifics}}</p>
+					    		<p class="market_pp4">￥{{obj.market_price}}<span>￥{{obj.price}}</span></p>
+					    		<span class="market_pp5">+</span>
+				    		</div>
+					</div>
+			    </div>
+		    </div>
+	</body>
+</html>

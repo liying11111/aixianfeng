@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<!--手机端布局-->
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<!--添加小蜜蜂-->
+	<!--第一行表示在网址前加小图标-->
+	<link rel="shortcut icon" href="1.jpg"/>
+	<link rel="bookmk" href="favicon.ico" type="image/x-icon"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/market.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reserve.css"/>
+	<link rel="stylesheet" type="text/css" href="css/shopCar.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mine.css"/>
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+	<!--二级页面-->
+	<link rel="stylesheet" type="text/css" href="css2/crazy.css"/>
+	
+	<script type="text/javascript" src="angular/angular.min.js"></script>
+	<script type="text/javascript" src="angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body ng-app="myapp">
+	<!--容器-->
+	<!--<div ng-view></div>
+	<ul class="footer" ng-controller="myCtr">
+		<li><a href="#/"><div class="footer_img1"></div>首页</a></li>
+		<li><a href="#/market"><div class="footer_img2"></div>闪送超市</a></li>
+		<li><a href="#/rare"><div class="footer_img3"></div>新鲜预定</a></li>
+		<li><a href="#/shopCar"><div class="footer_img4"></div>购物车</a></li>
+		<li><a href="#/mine"><div class="footer_img5"></div>我的</a></li>
+	</ul>-->
+
+	<div ng-view></div>
+	<ul class="footer" ng-controller="myTab">
+		<li ng-repeat="obj in arr">
+			<div class={{obj.cla}}></div>
+			<a href={{obj.href}} ng-click="clik(obj.index)">{{obj.title}}</a>
+		</li>
+		<div id="shop_logo">{{count.length}}</div>
+	</ul>
+</body>
+
+<script type="text/javascript">
+	//定义一个全局数组
+	var	carArr=[];
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/homecontroller.js"></script>
+<script type="text/javascript" src="js/market.js"></script>
+<script type="text/javascript" src="js/reserve.js"></script>
+<script type="text/javascript" src="js2/crazy.js"></script>
+<script type="text/javascript" src="js/shopCar.js"></script>
+
+</html>
