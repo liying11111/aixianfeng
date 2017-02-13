@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src='js/angular.min.js'></script>
+	<style>
+		.li {
+			background-color: red;
+		}
+	</style>
+</head>
+<body ng-app='myapp' ng-controller='con'>
+	<ul ng-repeat='obj in arr track by $index'>
+		<li class='li'>{{obj.addr}}<p>{{obj.shop_name}}</p></li>
+	</ul>
+	<button ng-click='list()'>第一页</button>
+	<button ng-click='list2()'>第二页</button>
+	<button ng-click='list3()'>第三页</button>
+	<button ng-click='next()'>下一页</button>
+</body>
+<script>
+	angular.module('myapp',[]).controller('con',function ($scope,$http) {		
+		$http.post('http://127.0.0.1:3500/list00', '').success(function (data) {
+			// body...
+			console.log(data)
+		}) 
+	})
+</script>
+</html>
